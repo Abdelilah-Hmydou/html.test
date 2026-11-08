@@ -1,0 +1,27 @@
+.artikelen {
+  display: grid;
+  gap: 10px;
+}
+
+article {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+@media (max-width: 480px) {
+  .artikelen {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .artikelen {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1025px) {
+  .artikelen {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

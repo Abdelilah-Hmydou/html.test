@@ -1,0 +1,90 @@
+/* Color variables */
+:root {
+  --color-margin: #F9CC9D;
+  --color-border: #FDDD9B;
+  --color-padding: #C3D08B;
+  --color-content: #8CB6C0;
+}
+
+body {
+  font-family: sans-serif;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: flex-start;
+}
+label {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+label::before {
+  content: attr(data-label);
+  display: inline-block;
+  min-width: 110px;
+}
+label > input {
+  flex: 1;
+  margin-left: 0.5rem;
+}
+.margin-box {
+  background-color: var(--color-margin);
+  padding: 0;
+  display: inline-block;
+}
+.border-box {
+  background-color: var(--color-border);
+  padding: 0;
+}
+.padding-box {
+  background-color: var(--color-padding);
+  padding: 0;
+}
+.content-box {
+  background-color: var(--color-content);
+  text-align: center;
+}
+.container {
+  align-items: flex-start;
+}
+.party-check {
+  display: inline-block;
+  animation: party-check-bounce 0.8s cubic-bezier(.36,1.5,.64,1) 0s 1;
+  position: relative;
+  color: #39e600;
+  text-shadow: 0 0 10px #39e600, 0 0 20px #fff;
+}
+@keyframes party-check-bounce {
+  0% { transform: scale(0.2) rotate(-30deg); opacity: 0; }
+  60% { transform: scale(1.2) rotate(10deg); opacity: 1; }
+  80% { transform: scale(0.95) rotate(-5deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+.assignment-textarea {
+  width: 250px;
+  font-family: monospace;
+}
+.assignment-flex-row {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.assignment-container {
+  display: flex;
+  gap: 10px;
+}
+.box-uitleg-fixed {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  background: rgba(255,255,255,0.95);
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  max-width: 300px;
+}
+.box-uitleg-fixed img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} 

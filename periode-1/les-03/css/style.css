@@ -1,0 +1,44 @@
+body {
+    background-color: darkblue;
+}
+body {
+    background-color: lightblue;
+}
+
+p {
+    color: red;
+    text-align: center;
+}
+
+h1 {
+    color: darkblue;
+    font-family: Arial;
+}
+.intro-text {
+    background-color: lightgray;
+    color: darkgray;
+    text-align: left;
+}
+#page-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.page-header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+}
+
+.about-me,
+.hobbies {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+#main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9em;
+}

@@ -1,0 +1,11 @@
+.grid-c {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  width: 800px;
+  height: 400px;
+}
+ 
+.grid-c div {
+  border: 1px solid black;
+}

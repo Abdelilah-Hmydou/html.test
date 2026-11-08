@@ -1,0 +1,57 @@
+nav a:hover {
+    color: red;
+}
+
+a:visited {
+    color: purple;
+}
+
+button:active {
+    background-color: yellow;
+}
+div > h1,
+div > p {
+    color: darkblue;
+}
+
+div > img {
+    background-color: lightgray;
+     width: 200px;
+    height: 150px;
+}
+div > p {
+    background-color: lightblue;
+}
+div > p {
+    color: green;
+}
+article > * {
+    background-color: lightgray;
+}
+
+section h2 {
+    color: darkgray;
+}
+
+section p {
+    background-color: lightyellow;
+}
+article h2,
+article p {
+    background-color: lightgray;
+}
+
+nav a {
+    color: darkblue;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: lightblue;
+    color: white;
+}
+li > span {
+    color: orange;
+}

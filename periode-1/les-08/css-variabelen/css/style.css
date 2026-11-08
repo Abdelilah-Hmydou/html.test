@@ -1,0 +1,88 @@
+:root {
+    /* Voeg hier de benodigde CSS-variabelen toe */
+    --default-bg: red;
+}
+
+.content {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.oefening {
+    min-height: 200px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.oefening1 {
+    background-color: var(--default-bg);
+}
+
+.oefening2 {
+    color: var(--default-text-color);
+}
+
+:root {
+    /* Voeg hier de benodigde CSS-variabelen toe */
+    --default-bg: green;
+    --default-text-color: red;
+    --default-font-size: 20px;
+    --default-padding: 20px;
+    --default-border-color: blue;
+    --secondary-bg: lightgray;
+    --secondary-text-color: green;
+    --default-margin: 20px;
+    --default-border-width: 2px;
+    --default-spacing: 10px;
+}
+
+.content {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.oefening {
+    min-height: 200px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.oefening1 {
+    background-color: var(--default-bg);
+}
+
+.oefening2 {
+    color: var(--default-text-color);
+}
+
+.oefening3 {
+    font-size: var(--default-font-size);
+}
+
+.oefening4 {
+    padding: var(--default-padding);
+}
+
+.oefening5 {
+    border: 2px solid var(--default-border-color);
+}
+
+.oefening6 {
+    background-color: var(--secondary-bg);
+}
+
+.oefening7 {
+    color: var(--secondary-text-color);
+}
+
+.oefening8 {
+    margin: var(--default-margin);
+}
+
+.oefening9 {
+    border-width: var(--default-border-width);
+}
+
+.oefening10 p {
+    margin-bottom: var(--default-spacing);
+}

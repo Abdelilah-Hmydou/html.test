@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+  * { box-sizing: border-box; }
+  .layout-g {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr auto;
+    grid-template-areas:
+      "header  header"
+      "aside   section1"
+      "aside   section2"
+      "aside   section3"
+      "footer  footer";
+    min-height: 600px;
+    border: 1px solid #151212;
+  }
+  .layout-g > * { border: 1px solid #000; padding: 12px; }
+  .header   { grid-area: header; }
+  .aside    { grid-area: aside; }
+  .section1 { grid-area: section1; }
+  .section2 { grid-area: section2; }
+  .section3 { grid-area: section3; }
+  .footer   { grid-area: footer; }
+</style>
+</head>
+<body>
+  <div class="layout-g">
+    <header class="header">Header</header>
+    <aside class="aside">Aside</aside>
+    <section class="section1">Section 1</section>
+    <section class="section2">Section 2</section>
+    <section class="section3">Section 3</section>
+    <footer class="footer">Footer</footer>
+  </div>
+
+</body>
+</html>

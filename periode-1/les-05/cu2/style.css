@@ -1,0 +1,37 @@
+
+body {
+    background-color: lightblue;
+    font-family: Arial;
+}
+
+.container {
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: blue;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: lightblue;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+li {
+    margin: 5px;
+}

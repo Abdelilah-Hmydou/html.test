@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+  * { box-sizing: border-box; }
+  .layout-h {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 250px auto;
+    grid-template-areas:
+      "header  header  header  header"
+      "section1 section1 section2 section2"
+      "wie     socials vrienden websites";
+    border: 1px solid #000;
+  }
+  .layout-h > * { border: 1px solid #000; padding: 12px; }
+  .header    { grid-area: header; }
+  .section1  { grid-area: section1; }
+  .section2  { grid-area: section2; }
+  .wie       { grid-area: wie; }
+  .socials   { grid-area: socials; }
+  .vrienden  { grid-area: vrienden; }
+  .websites  { grid-area: websites; }
+  ul { list-style: none; padding: 0; margin: 8px 0 0; }
+</style>
+</head>
+<body>
+  <div class="layout-h">
+    <header class="header">Header</header>
+    <section class="section1">Section</section>
+    <section class="section2">Section</section>
+    <div class="wie">Wie ben ik</div>
+    <div class="socials">
+      Socials-media
+      <ul><li>-</li><li>-</li></ul>
+    </div>
+    <div class="vrienden">
+      Beste Vrienden
+      <ul><li>-</li><li>-</li></ul>
+    </div>
+    <div class="websites">
+      Beste websites
+      <ul><li>-</li><li>-</li><li>-</li></ul>
+    </div>
+  </div>
+</body>
+</html>

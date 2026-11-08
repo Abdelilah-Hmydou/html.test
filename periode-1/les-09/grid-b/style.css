@@ -1,0 +1,11 @@
+.grid-b {
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  width: 800px;
+  height: 400px;
+}
+ 
+.grid-b div {
+  border: 1px solid black;
+}

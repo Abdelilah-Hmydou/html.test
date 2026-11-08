@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+  * { box-sizing: border-box; }
+  .layout-i {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 230px;
+    grid-template-rows: auto 300px auto;
+    grid-template-areas:
+      "header  header  header  header  nav"
+      "main    main    main    main    filters"
+      "art1    art2    art3    art4    filters";
+    border: 1px solid #000;
+  }
+  .layout-i > * { border: 1px solid #000; padding: 12px; }
+  .header  { grid-area: header; }
+  .nav     { grid-area: nav; }
+  .main    { grid-area: main; }
+  .filters { grid-area: filters; }
+  .art1    { grid-area: art1; }
+  .art2    { grid-area: art2; }
+  .art3    { grid-area: art3; }
+  .art4    { grid-area: art4; }
+</style>
+</head>
+<body>
+  <div class="layout-i">
+    <header class="header">Header</header>
+    <nav class="nav">Nav</nav>
+    <main class="main">Main</main>
+    <aside class="filters">Filters</aside>
+    <article class="art1">Article</article>
+    <article class="art2">Article</article>
+    <article class="art3">Article</article>
+    <article class="art4">Article</article>
+  </div>
+</body>
+</html>

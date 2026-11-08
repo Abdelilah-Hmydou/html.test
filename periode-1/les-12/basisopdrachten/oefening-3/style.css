@@ -1,0 +1,13 @@
+
+@media (orientation: landscape) {
+  body {
+    color: purple;
+  }
+}
+
+
+@media (orientation: portrait) {
+body {
+    color: green;
+  }
+}

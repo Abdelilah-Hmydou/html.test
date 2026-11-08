@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OL-UL Quiz</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>OL-UL QUIZ</h1>
+        </header>
+
+        <main>
+            <div class="quiz-info">
+                <div class="progress">
+                    <span>Vragen: <span id="questionCount">0</span></span>
+                    <span>Correct: <span id="correctCount">0</span></span>
+                    <span>Score: <span id="scorePercentage">0</span>%</span>
+                </div>
+                <div class="requirements">
+                    <span id="questionsRequirement" class="requirement">Blijf vragen beantwoorden</span>
+                    <span id="scoreRequirement" class="requirement">Blijf je score verbeteren</span>
+                </div>
+            </div>
+
+            <div class="quiz-container">
+                <div class="question-section">
+                    <h2 id="questionText">Vraag wordt geladen...</h2>
+                </div>
+
+                <div class="answers-section">
+                    <div id="answersContainer" class="answers-container">
+                        <!-- Answers will be dynamically generated -->
+                    </div>
+                </div>
+
+                <div class="feedback-section">
+                    <div id="feedback" class="feedback hidden">
+                        <div id="feedbackIcon" class="feedback-icon"></div>
+                        <div id="feedbackText" class="feedback-text"></div>
+                    </div>
+                    <button id="nextButton" class="next-button hidden">Volgende Vraag</button>
+                </div>
+            </div>
+
+            <div id="completionMessage" class="completion-message hidden">
+                <h2>🎉 Gefeliciteerd!</h2>
+                <p>Je hebt de quiz succesvol voltooid!</p>
+                <p>Eindscore: <span id="finalScore">0</span>%</p>
+                <p>Vragen Beantwoord: <span id="finalQuestions">0</span></p>
+                <button id="restartButton" class="restart-button">Nieuwe Quiz Starten</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts/questions.js"></script>
+    <script src="scripts/quiz.js"></script>
+</body>
+</html>

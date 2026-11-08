@@ -1,0 +1,335 @@
+/* Quiz Application Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+header h1 {
+    text-align: center;
+    color: #4a5568;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+/* Quiz Info Styles */
+.quiz-info {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.progress {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.progress span {
+    background: #f7fafc;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #4a5568;
+}
+
+.requirements {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.requirement {
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.requirement.pending {
+    background: #fed7d7;
+    color: #c53030;
+}
+
+.requirement.met {
+    background: #c6f6d5;
+    color: #2f855a;
+}
+
+/* Quiz Container Styles */
+.quiz-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.question-section {
+    margin-bottom: 30px;
+}
+
+.question-section h2 {
+    color: #2d3748;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Answers Styles */
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.answer-button {
+    padding: 15px 20px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #4a5568;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.answer-button:hover:not(:disabled) {
+    border-color: #667eea;
+    background: #f7fafc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.answer-button:disabled {
+    cursor: not-allowed;
+}
+
+.answer-button.correct-answer {
+    background: #c6f6d5;
+    border-color: #48bb78;
+    color: #2f855a;
+    animation: correctPulse 0.6s ease-in-out;
+}
+
+.answer-button.incorrect-answer {
+    background: #fed7d7;
+    border-color: #f56565;
+    color: #c53030;
+    animation: incorrectShake 0.6s ease-in-out;
+}
+
+/* Feedback Styles */
+.feedback-section {
+    text-align: center;
+}
+
+.feedback {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #f7fafc;
+    border: 2px solid #e2e8f0;
+}
+
+.feedback.hidden {
+    display: none;
+}
+
+.feedback-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: feedbackBounce 0.8s ease-in-out;
+}
+
+.feedback-icon.correct {
+    color: #48bb78;
+}
+
+.feedback-icon.incorrect {
+    color: #f56565;
+}
+
+.feedback-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.feedback-text.correct {
+    color: #2f855a;
+}
+
+.feedback-text.incorrect {
+    color: #c53030;
+}
+
+.explanation {
+    background: #edf2f7;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    color: #4a5568;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.next-button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.next-button:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.next-button.hidden {
+    display: none;
+}
+
+/* Completion Message Styles */
+.completion-message {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.completion-message.hidden {
+    display: none;
+}
+
+.completion-message h2 {
+    color: #48bb78;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: celebrationBounce 1s ease-in-out;
+}
+
+.completion-message p {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.restart-button {
+    background: #48bb78;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.restart-button:hover {
+    background: #38a169;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
+}
+
+/* Animations */
+@keyframes correctPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes incorrectShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+@keyframes feedbackBounce {
+    0% { transform: scale(0.3); opacity: 0; }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes celebrationBounce {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    
+    .progress {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .requirements {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .quiz-container {
+        padding: 20px;
+    }
+    
+    .question-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .answer-button {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+    }
+}
